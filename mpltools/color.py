@@ -214,4 +214,5 @@ def cycle_cmap(length=50, cmap=None, start=None, stop=None, ax=None):
     if ax is None:
         plt.rc('axes', color_cycle=color_cycle.tolist())
     else:
-        ax.set_color_cycle(color_cycle)
+        #ax.set_color_cycle(color_cycle)
+        ax.set_prop_cycle(color=color_cycle)
